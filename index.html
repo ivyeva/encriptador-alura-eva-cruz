@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Alura - Eva Cruz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-decoration">
+            <div class="cat">
+                <img src="./assets/cat-cute.png" class="cat-img" id="gato-cute">
+                <img src="./assets/cat-wink.png" class="cat-img esconder-gato" id="gato-wink">
+            </div>
+            <div>
+                <p class="header-saludo">¡Bienvenido a mi encriptador!</p>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <section class="content">
+            <div class="human-text-container">
+                <div class="human-text-inner">
+                    <input type="text" id="human-text" class="texto-mostrado" placeholder="Escribe tu texto aqui">
+                    <p class="aviso-small">Solo letras minúsculas y sin acentos</p>
+                    <div class="btn-container">
+                        <button id="convertir" onclick="encriptar()" class="boton-cta">Encriptar</button>
+                        <button id="desconvertir" onclick="desencriptar()" class="boton-cta-muted">Desencriptar</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="azul-derecha">
+                <div class="processed-text-container">
+                <div id="processed-text">
+                    <p id="processed-text-content" class="texto-mostrado">Ningún mensaje fue encontrado</p>
+                </div>
+                <div class="btn-muted-container">
+                    <button id="copiar-portapapeles" onclick="copiarPortapapeles()" class="boton-muted">Copiar</button>
+                </div>    
+            </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Desarrollado por Eva Cruz 2024</p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
